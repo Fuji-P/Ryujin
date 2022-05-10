@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\enemy">
+      <UniqueIdentifier>{68c42cbc-9302-4a15-94f0-939814d421a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graph">
+      <UniqueIdentifier>{2c7b05a9-1bf2-4b8c-bba8-2bb6bf6538ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\shot">
+      <UniqueIdentifier>{d4e08acf-4420-45a0-9581-8d4e6fbbaab6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\shot\Hard">
+      <UniqueIdentifier>{01da4d5c-4557-4059-bed8-e956508918d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\boss_shot">
+      <UniqueIdentifier>{84daeb42-df55-407f-afa8-88735ebb7515}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\boss_shot\Hard">
+      <UniqueIdentifier>{162065a6-754d-412a-8ec1-bab5bb2ebf36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mydat\source\char.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="mydat\source\fps.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="mydat\source\ini.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="mydat\source\key.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="mydat\source\load.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="mydat\source\main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="mydat\source\music.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="mydat\source\out.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="mydat\source\enemy.cpp">
+      <Filter>ソース ファイル\enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="mydat\source\enemy_act_pattern.cpp">
+      <Filter>ソース ファイル\enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="mydat\source\graph.cpp">
+      <Filter>ソース ファイル\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="mydat\source\graph_back.cpp">
+      <Filter>ソース ファイル\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="mydat\source\cshot.cpp">
+      <Filter>ソース ファイル\shot</Filter>
+    </ClCompile>
+    <ClCompile Include="mydat\source\shot.cpp">
+      <Filter>ソース ファイル\shot</Filter>
+    </ClCompile>
+    <ClCompile Include="mydat\source\shotH.cpp">
+      <Filter>ソース ファイル\shot\Hard</Filter>
+    </ClCompile>
+    <ClCompile Include="mydat\source\boss_shot.cpp">
+      <Filter>ソース ファイル\boss_shot</Filter>
+    </ClCompile>
+    <ClCompile Include="mydat\source\boss_shotH.cpp">
+      <Filter>ソース ファイル\boss_shot\Hard</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mydat\include\define.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="mydat\include\function.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="mydat\include\GV.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="mydat\include\struct.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
