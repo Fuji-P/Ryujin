@@ -7,23 +7,24 @@
 #define GLOBAL_INSTANCE 
 #include "../include/GV.h"
 
-int Key[256];
+//現在のキー入力処理を行う
+extern int GetHitKeyStateAll_2();
+//受け取ったキー番号の現在の入力状態を返す
+extern int CheckStateKey(unsigned char Handle);
 
-int GetHitKeyStateAll_2(
-	int GetHitKeyStateAll_InputKey[]
-	)
+//ループで必ず行う３大処理
+int ProcessLoop()
 {
-	char GetHitKeyStateAll_Key[256];
-	GetHitKeyStateAll(GetHitKeyStateAll_Key);
-
-	for (int i = 0; i < 256; i++) {
-		if (GetHitKeyStateAll_Key[i] == 1) {
-			GetHitKeyStateAll_InputKey[i]++;
-		}
-		else {
-			GetHitKeyStateAll_InputKey[i] = 0;
-		}
+	//プロセス処理がエラーなら-1を返す
+	if (ProcessMessage() != 0) {
+		return -1;
 	}
+	//画面クリア処理がエラーなら-1を返す
+	if (ClearDrawScreen() != 0) {
+		return -1;
+	}
+	//現在のキー入力処理を行う
+	GetHitKeyStateAll_2();
 	return 0;
 }
 
@@ -42,18 +43,19 @@ int WINAPI WinMain(
 		return -1;
 	}
 
-	while (
-			ProcessMessage() == 0 &&					//ﾒｯｾｰｼﾞ処理
-			ClearDrawScreen() == 0 &&					//画面をｸﾘｱ
-			GetHitKeyStateAll_2(Key) == 0 &&			//入力状態を保存
-			Key[KEY_INPUT_ESCAPE] == 0					//ESCが押されていない
-			) {
+	//メインループ
+	while (ProcessLoop() == 0) {
 
-			//ココ！！
+		//エスケープが入力されたらブレイク
+		if (CheckStateKey(KEY_INPUT_ESCAPE) == 1) {
+			break;
+		}
 
+		//裏画面反映
 		ScreenFlip();
 	}
 
+	//DXライブラリ終了処理
 	DxLib_End();
 	return 0;
 }
