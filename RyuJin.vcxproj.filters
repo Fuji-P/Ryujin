@@ -6,22 +6,22 @@
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="ソース ファイル\enemy">
-      <UniqueIdentifier>{68c42cbc-9302-4a15-94f0-939814d421a9}</UniqueIdentifier>
+      <UniqueIdentifier>{b9e0952c-a74a-4644-b99e-206aff19f982}</UniqueIdentifier>
     </Filter>
     <Filter Include="ソース ファイル\graph">
-      <UniqueIdentifier>{2c7b05a9-1bf2-4b8c-bba8-2bb6bf6538ec}</UniqueIdentifier>
+      <UniqueIdentifier>{1763c914-b744-4d74-a94b-250a5ea01759}</UniqueIdentifier>
     </Filter>
     <Filter Include="ソース ファイル\shot">
-      <UniqueIdentifier>{d4e08acf-4420-45a0-9581-8d4e6fbbaab6}</UniqueIdentifier>
+      <UniqueIdentifier>{e5a47c81-3a37-4a7c-8887-23adee3ca09e}</UniqueIdentifier>
     </Filter>
     <Filter Include="ソース ファイル\shot\Hard">
-      <UniqueIdentifier>{01da4d5c-4557-4059-bed8-e956508918d8}</UniqueIdentifier>
+      <UniqueIdentifier>{16d8d0db-1029-45e0-b607-44c8d90a69c4}</UniqueIdentifier>
     </Filter>
     <Filter Include="ソース ファイル\boss_shot">
-      <UniqueIdentifier>{84daeb42-df55-407f-afa8-88735ebb7515}</UniqueIdentifier>
+      <UniqueIdentifier>{eef4a331-3057-4d64-b124-d44f2ebefa0e}</UniqueIdentifier>
     </Filter>
     <Filter Include="ソース ファイル\boss_shot\Hard">
-      <UniqueIdentifier>{162065a6-754d-412a-8ec1-bab5bb2ebf36}</UniqueIdentifier>
+      <UniqueIdentifier>{af3b219a-74fb-42a9-adc5-7193ae6644da}</UniqueIdentifier>
     </Filter>
     <Filter Include="ヘッダー ファイル">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
