@@ -1,22 +1,20 @@
-﻿cl : コマンド ライン warning D9035: オプション 'Gm' の使用は現在推奨されていません。今後のバージョンからは削除されます。
-  shotH.cpp
-  shot.cpp
-  out.cpp
-  music.cpp
-  main.cpp
-  load.cpp
-  key.cpp
-  ini.cpp
-  graph_back.cpp
-  graph.cpp
-C:\Users\S-SAOTOME\source\repos\Ryujin\mydat\source\graph.cpp(13,25): warning C4244: '引数': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\S-SAOTOME\source\repos\Ryujin\mydat\source\graph.cpp(13,19): warning C4244: '引数': 'double' から 'float' への変換です。データが失われる可能性があります。
-  fps.cpp
-  enemy_act_pattern.cpp
-  enemy.cpp
-  cshot.cpp
-  char.cpp
+﻿  boss_shot.cpp
   boss_shotH.cpp
-  boss_shot.cpp
+  char.cpp
+  cshot.cpp
+  enemy.cpp
+  enemy_act_pattern.cpp
+  fps.cpp
+  graph.cpp
+  graph_back.cpp
+  ini.cpp
+  key.cpp
+  load.cpp
+  main.cpp
+  music.cpp
+  out.cpp
+  shot.cpp
+  shotH.cpp
   コードを生成中...
+boss_shot.obj : warning LNK4075: /EDITANDCONTINUE は /SAFESEH の指定によって無視されます。
   RyuJin.vcxproj -> C:\Users\S-SAOTOME\source\repos\Ryujin\Debug\RyuJin.exe
