@@ -1,7 +1,24 @@
-﻿  key.cpp
+﻿  boss_shot.cpp
+  boss_shotH.cpp
+  char.cpp
+  cshot.cpp
+  enemy.cpp
+  enemy_act_pattern.cpp
+  fps.cpp
+  graph.cpp
+C:\Users\S-SAOTOME\source\repos\Ryujin\mydat\source\graph.cpp(13,25): warning C4244: '引数': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\S-SAOTOME\source\repos\Ryujin\mydat\source\graph.cpp(13,19): warning C4244: '引数': 'double' から 'float' への変換です。データが失われる可能性があります。
+  graph_back.cpp
+  ini.cpp
+  key.cpp
+  load.cpp
   main.cpp
+  music.cpp
+  out.cpp
+  shot.cpp
+  shotH.cpp
   コード生成しています。
-  4 of 4 functions (100.0%) were compiled.
+  4 of 7 functions (57.1%) were compiled, the rest were copied from previous compilation.
     3 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   コード生成が終了しました。

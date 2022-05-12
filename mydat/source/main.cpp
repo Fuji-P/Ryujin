@@ -11,6 +11,13 @@
 extern int GetHitKeyStateAll_2();
 //受け取ったキー番号の現在の入力状態を返す
 extern int CheckStateKey(unsigned char Handle);
+//データのロード
+extern void load();
+//描画メイン
+extern void graph_main();
+
+int img_ch[2][12];	//キャラクタ画像9枚分　X2(変身用)
+ch_t ch;			//キャラクタデータ宣言
 
 //ループで必ず行う３大処理
 int ProcessLoop()
@@ -43,8 +50,14 @@ int WINAPI WinMain(
 		return -1;
 	}
 
+	//データロード
+	load();
+
 	//メインループ
 	while (ProcessLoop() == 0) {
+
+		//描画メイン
+		graph_main();
 
 		//エスケープが入力されたらブレイク
 		if (CheckStateKey(KEY_INPUT_ESCAPE) == 1) {
