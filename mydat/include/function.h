@@ -4,6 +4,9 @@
 /* サイト名  ：龍神録プログラミングの館 */
 /****************************************/
 
+//char.cpp
+	GLOBAL void calc_ch();
+
 //graph.cpp
 	//描画メイン
 	GLOBAL void graph_main();

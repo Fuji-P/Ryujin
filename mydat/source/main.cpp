@@ -53,6 +53,7 @@ int WINAPI WinMain(
 				func_state=100;
 				break;
 			case 100:
+				calc_ch();
 				//•`‰æƒƒCƒ“
 				graph_main();
 				break;

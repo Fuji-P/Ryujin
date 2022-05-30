@@ -17,6 +17,7 @@
 
 //画像用変数宣言部
 GLOBAL int img_ch[2][12];	//キャラクタ画像9枚分　X2(変身用)
+GLOBAL int img_board[40];	//ボードにつかう画像
 
 //フラグ・ステータス変数
 GLOBAL int func_state;		//関数制御用変数
