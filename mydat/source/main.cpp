@@ -44,8 +44,22 @@ int WINAPI WinMain(
 	//メインループ
 	while (ProcessLoop() == 0) {
 
-		//描画メイン
-		graph_main();
+		switch(func_state){
+			case 0:
+				//データロード
+				load();
+				//初回の初期化
+				first_ini();
+				func_state=100;
+				break;
+			case 100:
+				//描画メイン
+				graph_main();
+				break;
+			default:
+				printfDx("不明なfunc_state\n");
+				break;
+			}
 
 		//エスケープが入力されたらブレイク
 		if (CheckStateKey(KEY_INPUT_ESCAPE) == 1) {
