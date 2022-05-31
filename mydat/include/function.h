@@ -6,6 +6,7 @@
 
 //char.cpp
 	GLOBAL void calc_ch();
+	GLOBAL void ch_move();
 
 //graph.cpp
 	//•`‰æƒƒCƒ“

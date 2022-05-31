@@ -57,6 +57,8 @@ int WINAPI WinMain(
 			case 100:
 				//キャラクタ計算
 				calc_ch();
+				//キャラクタの移動制御
+				ch_move();
 				//描画メイン
 				graph_main();
 				break;

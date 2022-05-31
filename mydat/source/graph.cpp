@@ -7,7 +7,7 @@
 #include "../include/GV.h"
 
 void graph_ch() {
-	DrawRotaGraphF(ch.x + FIELD_X, ch.y + FIELD_Y, 1.0f, 0.0f, img_ch[0][ch.img], TRUE);
+	DrawRotaGraphF((float)ch.x + FIELD_X, (float)ch.y + FIELD_Y, 1.0f, 0.0f, img_ch[0][ch.img], TRUE);
 }
 
 void graph_board(){

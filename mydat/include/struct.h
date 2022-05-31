@@ -17,8 +17,7 @@ typedef struct {
 	int money;			//お金
 	int img;			//画像
 	int slow;			//スローかどうか
-	float x, y;			//座標
-//	double x, y;		//座標
+	double x, y;		//座標
 }ch_t;
 
 //パッドに関する構造体
