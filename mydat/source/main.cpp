@@ -20,6 +20,8 @@ int ProcessLoop()
 	}
 	//現在のキー入力処理を行う
 	GetHitKeyStateAll_2();
+	//現在のパッド入力処理を行う
+	GetHitPadStateAll();
 	return 0;
 }
 
@@ -53,6 +55,7 @@ int WINAPI WinMain(
 				func_state=100;
 				break;
 			case 100:
+				//キャラクタ計算
 				calc_ch();
 				//描画メイン
 				graph_main();

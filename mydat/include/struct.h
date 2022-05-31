@@ -20,3 +20,21 @@ typedef struct {
 	float x, y;			//座標
 //	double x, y;		//座標
 }ch_t;
+
+//パッドに関する構造体
+typedef struct{
+	int key[PAD_MAX];
+}pad_t;
+
+//コンフィグに関する構造体
+typedef struct{
+	int left;
+	int up;
+	int right;
+	int down;
+	int shot;
+	int bom;
+	int slow;
+	int start;
+	int change;
+}configpad_t;

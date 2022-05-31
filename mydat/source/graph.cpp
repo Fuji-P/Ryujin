@@ -11,10 +11,10 @@ void graph_ch() {
 }
 
 void graph_board(){
-	DrawGraph(	0,	0,img_board[10],FALSE);
-	DrawGraph(	0, 16,img_board[11],FALSE);
-	DrawGraph(	0,464,img_board[12],FALSE);
-	DrawGraph(416,	0,img_board[20],FALSE);
+	DrawGraph(0, 0, img_board[10], FALSE);
+	DrawGraph(0, 16, img_board[11], FALSE);
+	DrawGraph(0, 464, img_board[12], FALSE);
+	DrawGraph(416, 0, img_board[20], FALSE);
 }
 
 void graph_main() {
