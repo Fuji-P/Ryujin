@@ -3,13 +3,12 @@
 /* サークル名：RemicalSoft              */
 /* サイト名  ：龍神録プログラミングの館 */
 /****************************************/
+//enemy.cpp
+	GLOBAL void enemy_main();
 
 //char.cpp
 	GLOBAL void calc_ch();
 	GLOBAL void ch_move();
-
-//enemy.cpp
-	GLOBAL void enemy_main();
 
 //graph.cpp
 	//描画メイン
@@ -33,4 +32,4 @@
 //laod.cpp
 	//データのロード
 	GLOBAL void load();
-
+	GLOBAL void load_story();

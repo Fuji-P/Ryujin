@@ -55,6 +55,7 @@ int WINAPI WinMain(
 			//STG‚ğn‚ß‚é‘O‚És‚¤‰Šú‰»
 			case 99:
 				ini();
+				load_story();
 				func_state = 100;
 				break;
 			case 100:

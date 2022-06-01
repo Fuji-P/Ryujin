@@ -12,7 +12,9 @@
 #define FIELD_Y 16
 //パッドキーの最大数
 #define PAD_MAX 16
-
+//敵の同時表示最大数
 #define ENEMY_MAX 30
+//敵の出現情報最大数
+#define ENEMY_ORDER_MAX 500
 
 #include "struct.h"
