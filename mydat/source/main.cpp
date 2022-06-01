@@ -48,19 +48,21 @@ int WINAPI WinMain(
 
 		switch(func_state){
 			case 0:
-				//データロード
-				load();
-				//初回の初期化
-				first_ini();
-				func_state=100;
+				load();				//データロード
+				first_ini();		//初回の初期化
+				func_state = 99;
+				break;
+			//STGを始める前に行う初期化
+			case 99:
+				ini();
+				func_state = 100;
 				break;
 			case 100:
-				//キャラクタ計算
-				calc_ch();
-				//キャラクタの移動制御
-				ch_move();
-				//描画メイン
-				graph_main();
+				calc_ch();			//キャラクタ計算
+				ch_move();			//キャラクタの移動制御
+				enemy_main();		//敵処理メイン
+				graph_main();		//描画メイン
+				stage_count++;
 				break;
 			default:
 				printfDx("不明なfunc_state\n");

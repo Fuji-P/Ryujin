@@ -8,12 +8,16 @@
 	GLOBAL void calc_ch();
 	GLOBAL void ch_move();
 
+//enemy.cpp
+	GLOBAL void enemy_main();
+
 //graph.cpp
 	//描画メイン
 	GLOBAL void graph_main();
 
 //ini.cpp
 	GLOBAL void first_ini();
+	GLOBAL void ini();
 
 //key.cpp
 	//現在のキー入力処理を行う
@@ -29,3 +33,4 @@
 //laod.cpp
 	//データのロード
 	GLOBAL void load();
+

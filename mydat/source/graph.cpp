@@ -6,6 +6,14 @@
 
 #include "../include/GV.h"
 
+void graph_enemy() {
+	for (int i = 0; i < ENEMY_MAX; i++) {
+		if (enemy[i].flag == 1) {
+			DrawRotaGraphF((float)enemy[i].x + FIELD_X, (float)enemy[i].y + FIELD_Y, 1.0f, 0.0f, img_enemy[0][enemy[i].img], TRUE);
+		}
+	}
+}
+
 void graph_ch() {
 	DrawRotaGraphF((float)ch.x + FIELD_X, (float)ch.y + FIELD_Y, 1.0f, 0.0f, img_ch[0][ch.img], TRUE);
 }
@@ -18,6 +26,7 @@ void graph_board(){
 }
 
 void graph_main() {
+	graph_enemy();
 	graph_ch();
 	graph_board();
 }

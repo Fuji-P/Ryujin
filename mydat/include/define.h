@@ -13,4 +13,6 @@
 //パッドキーの最大数
 #define PAD_MAX 16
 
+#define ENEMY_MAX 30
+
 #include "struct.h"
