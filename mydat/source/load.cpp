@@ -11,10 +11,21 @@ void load() {
 	img_board[11] = LoadGraph("dat/img/board/11.png");
 	img_board[12] = LoadGraph("dat/img/board/12.png");
 	img_board[20] = LoadGraph("dat/img/board/20.png");
-
+	LoadDivGraph("dat/img/char/0.png", 12, 4, 3, 73, 73, img_ch[0]);
 	LoadDivGraph("dat/img/enemy/0.png", 9, 3, 3, 32, 32, img_enemy[0]);
 
-	LoadDivGraph("dat/img/char/0.png", 12, 4, 3, 73, 73, img_ch[0]);
+	LoadDivGraph("dat/img/bullet/b0.png", 5, 5, 1, 76, 76, img_bullet[0]);
+	LoadDivGraph("dat/img/bullet/b1.png", 6, 6, 1, 22, 22, img_bullet[1]);
+	LoadDivGraph("dat/img/bullet/b2.png", 10, 10, 1, 5, 120, img_bullet[2]);
+	LoadDivGraph("dat/img/bullet/b3.png", 5, 5, 1, 19, 34, img_bullet[3]);
+	LoadDivGraph("dat/img/bullet/b4.png", 10, 10, 1, 38, 38, img_bullet[4]);
+	LoadDivGraph("dat/img/bullet/b5.png", 3, 3, 1, 14, 16, img_bullet[5]);
+	LoadDivGraph("dat/img/bullet/b6.png", 3, 3, 1, 14, 18, img_bullet[6]);
+	LoadDivGraph("dat/img/bullet/b7.png", 9, 9, 1, 16, 16, img_bullet[7]);
+	LoadDivGraph("dat/img/bullet/b8.png", 10, 10, 1, 12, 18, img_bullet[8]);
+	LoadDivGraph("dat/img/bullet/b9.png", 3, 3, 1, 13, 19, img_bullet[9]);
+
+	sound_se[0] = LoadSoundMem("dat/se/enemy_shot.wav");
 }
 
 //ìGÇÃèoåªèÓïÒÇÉGÉNÉZÉãÇ©ÇÁì«Ç›çûÇÒÇ≈äiî[Ç∑ÇÈä÷êî

@@ -79,3 +79,32 @@ typedef struct{
 	int start;
 	int change;
 }configpad_t;
+
+//弾に関する構造体
+typedef struct {
+	int flag;				//フラグ
+	int knd;				//種類
+	int cnt;				//カウンタ
+	int col;				//色
+	int state;				//状態
+	int till;				//少なくとも消さない時間
+	int eff;				//エフェクトの種類
+	double x;				//座標
+	double y;				//座標
+	double angle;			//角度
+	double spd;				//速度
+	double base_angle[1];	//ベースの角度
+	double rem_spd[1];		//一時記憶スピード
+
+}bullet_t;
+
+//ショットに関する構造体
+typedef struct {
+	int flag;	//フラグ
+	int knd;	//種類
+	int cnt;	//カウンタ
+	int num;	//どの敵から発射されたかの番号、色
+	double base_angle[1];	//ベース角度
+	double base_spd[1];		//ベーススピード
+	bullet_t bullet[SHOT_BULLET_MAX];
+}shot_t;

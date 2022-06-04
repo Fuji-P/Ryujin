@@ -18,6 +18,11 @@
 	GLOBAL void first_ini();
 	GLOBAL void ini();
 
+//shot.cpp
+	GLOBAL double shotatan2(int n);
+	GLOBAL int shot_search(int n);
+	GLOBAL void shot_main();
+
 //key.cpp
 	//現在のキー入力処理を行う
 	GLOBAL int GetHitKeyStateAll_2();
@@ -33,3 +38,7 @@
 	//データのロード
 	GLOBAL void load();
 	GLOBAL void load_story();
+
+//music.cpp
+	GLOBAL void music_ini();
+	GLOBAL void music_play();

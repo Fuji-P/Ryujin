@@ -40,12 +40,9 @@ int WINAPI WinMain(
 		return -1;
 	}
 
-	//データロード
-	load();
-
 	//メインループ
 	while (ProcessLoop() == 0) {
-
+		music_ini();
 		switch(func_state){
 			case 0:
 				load();				//データロード
@@ -62,6 +59,7 @@ int WINAPI WinMain(
 				calc_ch();			//キャラクタ計算
 				ch_move();			//キャラクタの移動制御
 				enemy_main();		//敵処理メイン
+				shot_main();		//ショットメイン
 				graph_main();		//描画メイン
 				stage_count++;
 				break;
@@ -69,7 +67,7 @@ int WINAPI WinMain(
 				printfDx("不明なfunc_state\n");
 				break;
 			}
-
+		music_play();
 		//エスケープが入力されたらブレイク
 		if (CheckStateKey(KEY_INPUT_ESCAPE) == 1) {
 			break;

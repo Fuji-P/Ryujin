@@ -6,7 +6,6 @@
 
 #include "../include/GV.h"
 
-#define ENEMY_PATTERN_MAX 11
 extern void enemy_pattern0(int);
 extern void enemy_pattern1(int);
 extern void enemy_pattern2(int);
@@ -80,6 +79,24 @@ void enemy_enter() {
 	}
 }
 
+void enter_shot(
+	int i
+)
+{
+	//ƒtƒ‰ƒO‚Ì‚½‚Á‚Ä–³‚¢enemy‚ð’T‚·
+	for (int j = 0; j < SHOT_MAX; j++) {
+		//–¢Žg—p‚Ì’e–‹ƒf[ƒ^‚ª‚ ‚ê‚Î
+		if (shot[j].flag == 0) {
+			memset(&shot[j], 0, sizeof(shot_t));					//‰Šú‰»‚µ‚Ä“o˜^
+			shot[j].flag = 1;										//ƒtƒ‰ƒO‚ð‚½‚Ä‚é
+			shot[j].knd = enemy[i].blknd;							//’e‚ÌŽí—Þ
+			shot[j].num = i;										//num=‚Ç‚Ì“G‚©‚ç”­ŽË‚³‚ê‚½‚à‚Ì‚©B
+			shot[j].cnt = 0;
+			return;
+		}
+	}
+}
+
 //“G‚Ìs“®§Œä
 void enemy_act() {
 	for (int i = 0; i < ENEMY_MAX; i++) {
@@ -100,6 +117,9 @@ void enemy_act() {
 					enemy[i].y < -20 ||
 					FIELD_MAX_Y + 20 < enemy[i].y) {
 					enemy[i].flag = 0;
+				}
+				if (enemy[i].bltime == enemy[i].cnt) {
+					enter_shot(i);
 				}
 			}
 			else {

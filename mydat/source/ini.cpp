@@ -27,4 +27,5 @@ void ini() {
 	ch.y = FIELD_MAX_Y * 3 / 4;
 	memset(enemy, 0, sizeof(enemy_t) * ENEMY_MAX);	//“Gƒf[ƒ^‚Ì‰Šú‰»
 	memset(enemy_order, 0, sizeof(enemy_order_t) * ENEMY_ORDER_MAX);
+	memset(shot, 0, sizeof(shot_t) * SHOT_MAX);
 }
