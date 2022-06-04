@@ -6,23 +6,32 @@
 
 #include "../include/GV.h"
 
-//“G‚ÌˆÚ“®ƒpƒ^[ƒ“0‚Å‚ÌˆÚ“®§Œä
-void enemy_pattern0(int i) {
-	int t = enemy[i].cnt;
-	if (t == 0) {
-		//‰º‚ª‚Á‚Ä‚­‚é
-		enemy[i].vy = 2;
-	}
-	if (t == 60) {
-		//~‚Ü‚é
-		enemy[i].vy = 0;
-	}
-	//“o˜^‚³‚ê‚½’â‘ØŠÔ‚¾‚¯‚µ‚Ä
-	if (t == 60 + enemy[i].wait) {
-		//ã‚ª‚Á‚Ä‚¢‚­
-		enemy[i].vy = -2;
-	}
-}
+#define ENEMY_PATTERN_MAX 11
+extern void enemy_pattern0(int);
+extern void enemy_pattern1(int);
+extern void enemy_pattern2(int);
+extern void enemy_pattern3(int);
+extern void enemy_pattern4(int);
+extern void enemy_pattern5(int);
+extern void enemy_pattern6(int);
+extern void enemy_pattern7(int);
+extern void enemy_pattern8(int);
+extern void enemy_pattern9(int);
+extern void enemy_pattern10(int);
+
+void (*enemy_pattern[ENEMY_PATTERN_MAX])(int) = {
+	enemy_pattern0,
+	enemy_pattern1,
+	enemy_pattern2,
+	enemy_pattern3,
+	enemy_pattern4,
+	enemy_pattern5,
+	enemy_pattern6,
+	enemy_pattern7,
+	enemy_pattern8,
+	enemy_pattern9,
+	enemy_pattern10,
+};
 
 //‹ó‚¢‚Ä‚¢‚é“G”Ô†‚ğŒŸõ
 int enemy_num_search(){
@@ -76,19 +85,25 @@ void enemy_act() {
 	for (int i = 0; i < ENEMY_MAX; i++) {
 		//‚»‚Ì“G‚Ìƒtƒ‰ƒO‚ªƒIƒ“‚É‚È‚Á‚Ä‚½‚ç
 		if (enemy[i].flag == 1) {
-			enemy_pattern0(i);
-			enemy[i].x += cos(enemy[i].ang) * enemy[i].sp;
-			enemy[i].y += sin(enemy[i].ang) * enemy[i].sp;
-			enemy[i].x += enemy[i].vx;
-			enemy[i].y += enemy[i].vy;
-			enemy[i].cnt++;
-			enemy[i].img = enemy[i].muki * 3 + (enemy[i].cnt % 18) / 6;
-			//“G‚ª‰æ–ÊŠO‚ÉŠO‚ê‚½‚çÁ‚·
-			if (enemy[i].x < -50 ||
-				FIELD_MAX_X + 50 < enemy[i].x ||
-				enemy[i].y < -50 ||
-				FIELD_MAX_Y + 50 < enemy[i].y) {
-				enemy[i].flag = 0;
+			if (0 <= ENEMY_PATTERN_MAX &&
+				enemy[i].pattern < ENEMY_PATTERN_MAX) {
+				enemy_pattern[enemy[i].pattern](i);
+				enemy[i].x += cos(enemy[i].ang) * enemy[i].sp;
+				enemy[i].y += sin(enemy[i].ang) * enemy[i].sp;
+				enemy[i].x += enemy[i].vx;
+				enemy[i].y += enemy[i].vy;
+				enemy[i].cnt++;
+				enemy[i].img = enemy[i].muki * 3 + (enemy[i].cnt % 18) / 6;
+				//“G‚ª‰æ–ÊŠO‚ÉŠO‚ê‚½‚çÁ‚·
+				if (enemy[i].x < -20 ||
+					FIELD_MAX_X + 20 < enemy[i].x ||
+					enemy[i].y < -20 ||
+					FIELD_MAX_Y + 20 < enemy[i].y) {
+					enemy[i].flag = 0;
+				}
+			}
+			else {
+				printfDx("enemy[i].pattern‚Ì%d’l‚ª•s³‚Å‚·B", enemy[i].pattern);
 			}
 		}
 	}
