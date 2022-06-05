@@ -7,9 +7,21 @@
 #include "../include/GV.h"
 
 extern void shot_bullet_H000(int);
+extern void shot_bullet_H001(int);
+extern void shot_bullet_H002(int);
+extern void shot_bullet_H003(int);
+extern void shot_bullet_H004(int);
+extern void shot_bullet_H005(int);
+extern void shot_bullet_H006(int);
 
 void (*shot_bullet[SHOT_KND_MAX])(int) = {
 	shot_bullet_H000,
+	shot_bullet_H001,
+	shot_bullet_H002,
+	shot_bullet_H003,
+	shot_bullet_H004,
+	shot_bullet_H005,
+	shot_bullet_H006,
 };
 
 //n”Ô–Ú‚ÌƒVƒ‡ƒbƒg‚ð“o˜^‚µ‚½“G‚ÆŽ©‹@‚Æ‚ÌŠp“x‚ð•Ô‚·

@@ -31,6 +31,6 @@
 //一度に画面に表示できる敵の弾幕の最大数
 #define SHOT_MAX 30
 //ショットの種類の最大数
-#define SHOT_KND_MAX 1
+#define SHOT_KND_MAX 7
 
 #include "struct.h"

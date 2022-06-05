@@ -1,3 +1,19 @@
-﻿  graph.cpp
-boss_shot.obj : warning LNK4075: /EDITANDCONTINUE は /SAFESEH の指定によって無視されます。
+﻿  boss_shot.cpp
+  boss_shotH.cpp
+  char.cpp
+  cshot.cpp
+  enemy.cpp
+  enemy_act_pattern.cpp
+  fps.cpp
+  graph.cpp
+  graph_back.cpp
+  ini.cpp
+  key.cpp
+  load.cpp
+  main.cpp
+  music.cpp
+  out.cpp
+  shot.cpp
+  shotH.cpp
+  コードを生成中...
   RyuJin.vcxproj -> C:\Users\S-SAOTOME\source\repos\Ryujin\Debug\RyuJin.exe
