@@ -13,6 +13,17 @@ extern void shot_bullet_H003(int);
 extern void shot_bullet_H004(int);
 extern void shot_bullet_H005(int);
 extern void shot_bullet_H006(int);
+extern void shot_bullet_H007(int);
+extern void shot_bullet_H008(int);
+extern void shot_bullet_H009(int);
+extern void shot_bullet_H010(int);
+extern void shot_bullet_H011(int);
+extern void shot_bullet_H012(int);
+extern void shot_bullet_H013(int);
+extern void shot_bullet_H014(int);
+extern void shot_bullet_H015(int);
+extern void shot_bullet_H016(int);
+extern void shot_bullet_H017(int);
 
 void (*shot_bullet[SHOT_KND_MAX])(int) = {
 	shot_bullet_H000,
@@ -22,6 +33,17 @@ void (*shot_bullet[SHOT_KND_MAX])(int) = {
 	shot_bullet_H004,
 	shot_bullet_H005,
 	shot_bullet_H006,
+	shot_bullet_H007,
+	shot_bullet_H008,
+	shot_bullet_H009,
+	shot_bullet_H010,
+	shot_bullet_H011,
+	shot_bullet_H012,
+	shot_bullet_H013,
+	shot_bullet_H014,
+	shot_bullet_H015,
+	shot_bullet_H016,
+	shot_bullet_H017,
 };
 
 //n”Ô–Ú‚ÌƒVƒ‡ƒbƒg‚ð“o˜^‚µ‚½“G‚ÆŽ©‹@‚Æ‚ÌŠp“x‚ð•Ô‚·

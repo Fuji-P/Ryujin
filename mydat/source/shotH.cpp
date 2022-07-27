@@ -169,3 +169,101 @@ void shot_bullet_H006(
 		}
 	}
 }
+
+//‚Ý‚å‚ñ’e–‹
+void shot_bullet_H007(
+	int n
+)
+{
+	int t = shot[n].cnt;
+	if (t >= 0 && t <= 150 && t % 10 == 0) {
+		int k;
+		for (int i = 0; i < 20; i++) {
+			if (shot[n].flag != 2 &&
+				(k = shot_search(n)) != -1) {
+				shot[n].bullet[k].knd = 7;
+				shot[n].bullet[k].angle = PI2 / 20 * i;
+				shot[n].bullet[k].flag = 1;
+				shot[n].bullet[k].x = enemy[shot[n].num].x + cos(PI / 2 + PI / 150 * t) * 100;
+				shot[n].bullet[k].y = enemy[shot[n].num].y + sin(PI / 2 + PI / 150 * t) * 100;
+				shot[n].bullet[k].col = 2;
+				shot[n].bullet[k].cnt = 0;
+				shot[n].bullet[k].spd = 1.2;
+			}
+		}
+		for (int i = 0; i < 20; i++) {
+			if (shot[n].flag != 2 &&
+				(k = shot_search(n)) != -1) {
+				shot[n].bullet[k].knd = 7;
+				shot[n].bullet[k].angle = PI2 / 20 * i;
+				shot[n].bullet[k].flag = 1;
+				shot[n].bullet[k].x = enemy[shot[n].num].x + cos(PI / 2 - PI / 150 * t) * 100;
+				shot[n].bullet[k].y = enemy[shot[n].num].y + sin(PI / 2 - PI / 150 * t) * 100;
+				shot[n].bullet[k].col = 4;
+				shot[n].bullet[k].cnt = 0;
+				shot[n].bullet[k].spd = 1.2;
+				se_flag[0] = 1;
+			}
+		}
+	}
+}
+
+void shot_bullet_H008(
+	int n
+)
+{
+}
+
+void shot_bullet_H009(
+	int n
+)
+{
+}
+
+void shot_bullet_H010(
+	int n
+)
+{
+}
+
+void shot_bullet_H011(
+	int n
+)
+{
+}
+
+void shot_bullet_H012(
+	int n
+)
+{
+}
+
+void shot_bullet_H013(
+	int n
+)
+{
+}
+
+void shot_bullet_H014(
+	int n
+)
+{
+}
+
+void shot_bullet_H015(
+	int n
+)
+{
+}
+
+void shot_bullet_H016(
+	int n
+)
+{
+}
+
+void shot_bullet_H017(
+	int n
+)
+{
+}

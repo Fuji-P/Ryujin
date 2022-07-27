@@ -17,7 +17,7 @@
 #include "function.h"
 
 //画像用変数宣言部
-GLOBAL int img_ch[2][12];							//キャラクタ画像9枚分　X2(変身用)
+GLOBAL int img_ch[2][12];							//キャラクタ画像12枚分　X2(変身用)
 GLOBAL int img_enemy[3][9];							//敵画像9枚分　X3体分
 GLOBAL int img_board[40];							//ボードにつかう画像
 GLOBAL int img_bullet[10][10];
