@@ -1,23 +1,7 @@
-﻿  boss_shot.cpp
-  boss_shotH.cpp
-  char.cpp
-  cshot.cpp
-  enemy.cpp
-  enemy_act_pattern.cpp
-  fps.cpp
-  graph.cpp
-  graph_back.cpp
-  ini.cpp
-  key.cpp
-  load.cpp
-  main.cpp
-  music.cpp
-  out.cpp
-  shot.cpp
-  shotH.cpp
+﻿  shotH.cpp
   コード生成しています。
-  13 of 59 functions (22.0%) were compiled, the rest were copied from previous compilation.
-    11 functions were new in current compilation
-    7 functions had inline decision re-evaluated but remain unchanged
+  1 of 59 functions ( 1.7%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    9 functions had inline decision re-evaluated but remain unchanged
   コード生成が終了しました。
   RyuJin.vcxproj -> C:\Users\S-SAOTOME\source\repos\Ryujin\Release\RyuJin.exe

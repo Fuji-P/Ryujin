@@ -1,19 +1,2 @@
-﻿  boss_shot.cpp
-  boss_shotH.cpp
-  char.cpp
-  cshot.cpp
-  enemy.cpp
-  enemy_act_pattern.cpp
-  fps.cpp
-  graph.cpp
-  graph_back.cpp
-  ini.cpp
-  key.cpp
-  load.cpp
-  main.cpp
-  music.cpp
-  out.cpp
-  shot.cpp
-  shotH.cpp
-  コードを生成中...
+﻿  shotH.cpp
   RyuJin.vcxproj -> C:\Users\S-SAOTOME\source\repos\Ryujin\Debug\RyuJin.exe

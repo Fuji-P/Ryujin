@@ -208,10 +208,47 @@ void shot_bullet_H007(
 	}
 }
 
+//ミシャグジさま
 void shot_bullet_H008(
 	int n
 )
 {
+	int t = shot[n].cnt;
+	if (t >= 0 && t < 1200 && t % 90 == 0) {
+		double angle = rang(PI);
+		//途中から２分裂する分
+		for (int j = 0; j < 2; j++) {
+			//一度に60個
+			for (int i = 0; i < 60; i++) {
+				int k;
+				if (shot[n].flag != 2 && (k = shot_search(n)) != -1) {
+					shot[n].bullet[k].knd = 8;						//8番の弾
+					shot[n].bullet[k].angle = angle + PI2 / 60 * i;	//円形60個
+					shot[n].bullet[k].flag = 1;
+					shot[n].bullet[k].x = enemy[shot[n].num].x;
+					shot[n].bullet[k].y = enemy[shot[n].num].y;
+					shot[n].bullet[k].col = enemy[shot[n].num].col;
+					shot[n].bullet[k].cnt = 0;
+					shot[n].bullet[k].state = j;					//ステータス。0か1かで回転がかわる
+					shot[n].bullet[k].spd = 2;
+					se_flag[0] = 1;									//発射音鳴らす
+				}
+			}
+		}
+	}
+	//全弾分
+	for (int i = 0; i < SHOT_BULLET_MAX; i++) {
+		//登録されている弾があれば
+		if (shot[n].bullet[i].flag > 0) {							
+			int state = shot[n].bullet[i].state;
+			int cnt = shot[n].bullet[i].cnt;
+			//30～120カウントなら
+			if (30 < cnt && cnt < 120) {
+				shot[n].bullet[i].spd -= 1.2 / 90.0;							//90カウントかけて1.2減らす
+				shot[n].bullet[i].angle += (PI / 2) / 90.0 * (state ? -1 : 1);	//90カウントかけて90°傾ける
+			}
+		}
+	}
 }
 
 void shot_bullet_H009(
