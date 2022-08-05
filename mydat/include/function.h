@@ -9,6 +9,9 @@
 //enemy_act_pattern.cpp
 	GLOBAL double rang(double);
 
+//cshot.cpp
+	GLOBAL void cshot_main();
+
 //char.cpp
 	GLOBAL void calc_ch();
 	GLOBAL void ch_move();

@@ -58,6 +58,7 @@ int WINAPI WinMain(
 			case 100:
 				calc_ch();			//キャラクタ計算
 				ch_move();			//キャラクタの移動制御
+                cshot_main();		//自機ショットメイン
 				enemy_main();		//敵処理メイン
 				shot_main();		//ショットメイン
 				graph_main();		//描画メイン

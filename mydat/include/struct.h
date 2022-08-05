@@ -18,6 +18,7 @@ typedef struct {
 	int img;			//画像
 	int slow;			//スローかどうか
 	double x, y;		//座標
+	int shot_cnt;		//ショットのカウンタ
 }ch_t;
 
 //敵に関する構造体
@@ -108,3 +109,15 @@ typedef struct {
 	double base_spd[1];		//ベーススピード
 	bullet_t bullet[SHOT_BULLET_MAX];
 }shot_t;
+
+//キャラクターショットに関する構造体
+typedef struct{
+	int flag;
+	int power;
+	int cnt;
+	int knd;
+	double x;
+	double y;
+	double angle;
+	double spd;
+}cshot_t;

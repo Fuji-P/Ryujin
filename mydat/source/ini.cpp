@@ -23,9 +23,12 @@ void first_ini(){
 void ini() {
 	stage_count = 1;
 	memset(&ch, 0, sizeof(ch_t));					//自機データの初期化
-	ch.x = FIELD_MAX_X / 2;
-	ch.y = FIELD_MAX_Y * 3 / 4;
 	memset(enemy, 0, sizeof(enemy_t) * ENEMY_MAX);	//敵データの初期化
 	memset(enemy_order, 0, sizeof(enemy_order_t) * ENEMY_ORDER_MAX);
 	memset(shot, 0, sizeof(shot_t) * SHOT_MAX);
+	memset(cshot, 0, sizeof(cshot_t) * CSHOT_MAX);
+
+	ch.x = FIELD_MAX_X / 2;
+	ch.y = FIELD_MAX_Y * 3 / 4;
+	ch.power = 500;
 }

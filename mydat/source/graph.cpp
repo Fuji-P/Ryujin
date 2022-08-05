@@ -6,6 +6,7 @@
 
 #include "../include/GV.h"
 
+//“G•`‰æ
 void graph_enemy() {
 	for (int i = 0; i < ENEMY_MAX; i++) {
 		if (enemy[i].flag == 1) {
@@ -14,8 +15,18 @@ void graph_enemy() {
 	}
 }
 
+//Ž©‹@•`‰æ
 void graph_ch() {
 	DrawRotaGraphF((float)ch.x + FIELD_X, (float)ch.y + FIELD_Y, 1.0f, 0.0f, img_ch[0][ch.img], TRUE);
+}
+
+//Ž©‹@ƒVƒ‡ƒbƒg•`‰æ
+void graph_cshot(){
+	for (int i = 0; i < CSHOT_MAX; i++){
+		if (cshot[i].flag > 0){
+			DrawRotaGraphF((float)cshot[i].x + FIELD_X, (float)cshot[i].y + FIELD_Y, 1, 0, img_cshot[cshot[i].knd], TRUE);
+		}
+	}
 }
 
 //’eŠÛ‚Ì•`‰æ
@@ -62,6 +73,7 @@ void graph_board(){
 
 void graph_main() {
 	graph_enemy();
+	graph_cshot();
 	graph_ch();
 	graph_bullet();
 	graph_board();

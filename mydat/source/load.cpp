@@ -11,6 +11,7 @@ void load() {
 	img_board[11] = LoadGraph("dat/img/board/11.png");
 	img_board[12] = LoadGraph("dat/img/board/12.png");
 	img_board[20] = LoadGraph("dat/img/board/20.png");
+
 	LoadDivGraph("dat/img/char/0.png", 12, 4, 3, 73, 73, img_ch[0]);
 	LoadDivGraph("dat/img/enemy/0.png", 9, 3, 3, 32, 32, img_enemy[0]);
 
@@ -25,7 +26,11 @@ void load() {
 	LoadDivGraph("dat/img/bullet/b8.png", 10, 10, 1, 12, 18, img_bullet[8]);
 	LoadDivGraph("dat/img/bullet/b9.png", 3, 3, 1, 13, 19, img_bullet[9]);
 
+	img_cshot[0] = LoadGraph("dat/img/char/bl_00.png");
+	img_cshot[1] = LoadGraph("dat/img/char/bl_01.png");
+
 	sound_se[0] = LoadSoundMem("dat/se/enemy_shot.wav");
+	sound_se[2] = LoadSoundMem("dat/se/cshot.wav");
 }
 
 //“G‚ÌoŒ»î•ñ‚ğƒGƒNƒZƒ‹‚©‚ç“Ç‚İ‚ñ‚ÅŠi”[‚·‚éŠÖ”

@@ -32,5 +32,7 @@
 #define SHOT_MAX 30
 //ショットの種類の最大数
 #define SHOT_KND_MAX 18
+//自機ショットの登録最大数
+#define CSHOT_MAX 200
 
 #include "struct.h"
