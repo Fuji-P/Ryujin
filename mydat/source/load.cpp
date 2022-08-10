@@ -31,6 +31,11 @@ void load() {
 
 	sound_se[0] = LoadSoundMem("dat/se/enemy_shot.wav");
 	sound_se[2] = LoadSoundMem("dat/se/cshot.wav");
+	//各素材の再生ボリュームを設定
+	ChangeVolumeSoundMem( 50, sound_se[0]);
+	ChangeVolumeSoundMem(128, sound_se[1]);
+	ChangeVolumeSoundMem(128, sound_se[2]);
+	ChangeVolumeSoundMem( 80, sound_se[8]);
 }
 
 //敵の出現情報をエクセルから読み込んで格納する関数

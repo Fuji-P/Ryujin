@@ -48,3 +48,6 @@
 //music.cpp
 	GLOBAL void music_ini();
 	GLOBAL void music_play();
+
+//out.cpp
+	GLOBAL void out_main();

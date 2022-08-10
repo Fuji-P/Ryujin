@@ -84,6 +84,7 @@ void calc_cshot() {
 		if (cshot[i].flag == 1) {
 			cshot[i].x += cos(cshot[i].angle) * cshot[i].spd;
 			cshot[i].y += sin(cshot[i].angle) * cshot[i].spd;
+			cshot[i].cnt++;
 			//‰æ–Ê‚©‚çŠO‚ê‚½‚ç
 			if (cshot[i].x<-CSOUT || cshot[i].x>FIELD_MAX_X + CSOUT ||
 				cshot[i].y<-CSOUT || cshot[i].y>FIELD_MAX_Y + CSOUT) {

@@ -55,12 +55,14 @@ int WINAPI WinMain(
 				load_story();
 				func_state = 100;
 				break;
+			//通常処理
 			case 100:
 				calc_ch();			//キャラクタ計算
 				ch_move();			//キャラクタの移動制御
                 cshot_main();		//自機ショットメイン
 				enemy_main();		//敵処理メイン
 				shot_main();		//ショットメイン
+				out_main();  		//当たり計算
 				graph_main();		//描画メイン
 				stage_count++;
 				break;
