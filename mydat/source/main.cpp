@@ -63,6 +63,7 @@ int WINAPI WinMain(
 				enemy_main();		//敵処理メイン
 				shot_main();		//ショットメイン
 				out_main();  		//当たり計算
+				effect_main();		//エフェクトメイン
 				graph_main();		//描画メイン
 				stage_count++;
 				break;

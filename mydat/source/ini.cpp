@@ -27,6 +27,8 @@ void ini() {
 	memset(enemy_order, 0, sizeof(enemy_order_t) * ENEMY_ORDER_MAX);
 	memset(shot, 0, sizeof(shot_t) * SHOT_MAX);
 	memset(cshot, 0, sizeof(cshot_t) * CSHOT_MAX);
+	memset(effect, 0, sizeof(effect_t) * EFFECT_MAX);
+	memset(del_effect, 0, sizeof(del_effect_t) * DEL_EFFECT_MAX);
 
 	ch.x = FIELD_MAX_X / 2;
 	ch.y = FIELD_MAX_Y * 3 / 4;

@@ -32,6 +32,7 @@ typedef struct {
 	int hp_max;			//HP最大値
 	int item_n[6];		//落とすアイテム
 	int img;			//
+	int back_col;		//背景色
 	double x;			//座標
 	double y;			//座標
 	double vx;			//速度x成分
@@ -121,3 +122,27 @@ typedef struct{
 	double angle;
 	double spd;
 }cshot_t;
+
+//エフェクト
+typedef struct{
+	int flag;
+	int cnt;
+	int col;
+	int knd;
+	int img;
+	int eff;
+	int brt;
+	double x;
+	double y;
+	double r;
+	double ang;
+}effect_t;
+
+//消滅エフェクト
+typedef struct{
+	int flag;
+	int cnt;
+	int col;
+	double x;
+	double y;
+}del_effect_t;

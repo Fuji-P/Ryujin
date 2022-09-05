@@ -68,6 +68,7 @@ void enemy_enter() {
 				enemy[i].wait = enemy_order[t].wait;				//
 				enemy[i].hp = enemy_order[t].hp;					//体力
 				enemy[i].hp_max = enemy[i].hp;						//体力最大値
+				enemy[i].back_col=GetRand(4);
 				enemy[i].vx = 0;									//水平成分の速度
 				enemy[i].vy = 0;									//鉛直成分の速度
 				enemy[i].ang = 0;									//角度

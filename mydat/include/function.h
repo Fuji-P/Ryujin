@@ -16,6 +16,9 @@
 	GLOBAL void calc_ch();
 	GLOBAL void ch_move();
 
+//effect.cpp
+	GLOBAL void effect_main();
+	
 //graph.cpp
 	//•`‰æƒƒCƒ“
 	GLOBAL void graph_main();

@@ -6,6 +6,21 @@
 
 #include "../include/GV.h"
 
+void graph_effect() {
+	for (int i = 0; i < EFFECT_MAX; i++) {
+		if (effect[i].flag > 0) {
+			//エフェクトが光エフェクトなら
+			if (effect[i].eff == 1) {
+				SetDrawBlendMode(DX_BLENDMODE_ADD, effect[i].brt);
+			}
+			DrawRotaGraphF((float)effect[i].x + FIELD_X, (float)effect[i].y + FIELD_Y, effect[i].r, effect[i].ang, effect[i].img, TRUE);
+			if (effect[i].eff == 1) {
+				SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);
+			}
+		}
+	}
+}
+
 //敵描画
 void graph_enemy() {
 	for (int i = 0; i < ENEMY_MAX; i++) {
@@ -72,6 +87,7 @@ void graph_board(){
 }
 
 void graph_main() {
+	graph_effect();
 	graph_enemy();
 	graph_cshot();
 	graph_ch();

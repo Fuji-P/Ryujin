@@ -94,6 +94,7 @@
     <ClCompile Include="mydat\source\boss_shotH.cpp" />
     <ClCompile Include="mydat\source\char.cpp" />
     <ClCompile Include="mydat\source\cshot.cpp" />
+    <ClCompile Include="mydat\source\effect.cpp" />
     <ClCompile Include="mydat\source\enemy.cpp" />
     <ClCompile Include="mydat\source\enemy_act_pattern.cpp" />
     <ClCompile Include="mydat\source\fps.cpp" />

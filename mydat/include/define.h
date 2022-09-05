@@ -34,5 +34,9 @@
 #define SHOT_KND_MAX 18
 //自機ショットの登録最大数
 #define CSHOT_MAX 200
+//エフェクト登録最大数
+#define EFFECT_MAX 100
+//消滅エフェクト登録最大数
+#define DEL_EFFECT_MAX 30
 
 #include "struct.h"

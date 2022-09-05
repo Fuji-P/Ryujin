@@ -26,6 +26,8 @@ void load() {
 	LoadDivGraph("dat/img/bullet/b8.png", 10, 10, 1, 12, 18, img_bullet[8]);
 	LoadDivGraph("dat/img/bullet/b9.png", 3, 3, 1, 13, 19, img_bullet[9]);
 
+	LoadDivGraph("dat/img/enemy/hit_effect.png", 5, 5, 1, 140, 140, img_del_effect) ;
+
 	img_cshot[0] = LoadGraph("dat/img/char/bl_00.png");
 	img_cshot[1] = LoadGraph("dat/img/char/bl_01.png");
 

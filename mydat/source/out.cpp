@@ -65,6 +65,8 @@ int out_judge_cshot(
 	return 0;
 }
 
+extern void enter_del_effect(int);
+
 //“G‚ª€‚Ê‚©‚Ç‚¤‚©‚ÌŒˆ’è
 void enemy_death_judge(
 	int s
@@ -80,6 +82,7 @@ void enemy_death_judge(
 		enemy[s].flag = 0;
 		//“G‚Ìƒsƒ`ƒ…ƒŠ‰¹
 		se_flag[1] = 1;
+		enter_del_effect(s);
 
 		//“G‘”•ª
 		for (int i = 0; i < SHOT_MAX; i++) {
